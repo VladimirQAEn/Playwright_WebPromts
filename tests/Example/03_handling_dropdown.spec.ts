@@ -3,7 +3,7 @@
         test.beforeEach(async({ page }) => {
 
         //log in
-        await page.goto('https://www.facebook.com/');
+        await page.goto('https://www.facebook.com');
 
     });
 

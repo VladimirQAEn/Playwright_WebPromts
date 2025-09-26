@@ -4,7 +4,7 @@
     test.beforeEach(async({ page }) => {
 
         //log in
-        await page.goto('https://platform-qa.admixer.net/');
+        await page.goto('https://platform-qa.admixer.net');
         await page.getByRole('textbox', { name: 'Your Email Your password' }).click();
         await page.getByRole('textbox', { name: 'Your Email Your password' }).fill('TD_AutoTest@test');
         await page.getByRole('textbox', { name: 'Password', exact: true }).click();
