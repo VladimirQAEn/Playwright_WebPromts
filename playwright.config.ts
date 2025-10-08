@@ -1,4 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
+import { json } from 'stream/consumers';
 
 /**
  * Read environment variables from file.
@@ -22,18 +23,45 @@ export default defineConfig({
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 1,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : undefined,
+  workers: process.env.CI ? 1 : 4,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [
+    ['html'],
+    ['list'],
+    ['json', { outputFile: 'test-results.json' }],
+    ['junit', { outputFile: 'junit-results.xml' }],
+    ['allure-playwright'],
+
+    //---------------------------------------------for allure report
+    //add java
+    //https://www.oracle.com/java/technologies/downloads/#jdk25-windows
+    //Откройте "Переменные среды" Windows.
+    //В переменной JAVA_HOME укажите:C:\Program Files\Java\jdk-25
+    //В переменной Path добавьте:%JAVA_HOME%\bin
+    //Проверьте: Откройте новый терминал и выполните: java -version
+
+    //Install allure report commad line tool
+    //--npm install -g --save-dev allure-commandline
+
+    //Install the allure Playwright adapter
+    //--npm install --save-dev allure-playwright
+
+    //generate allure report
+    //--npx allure serve allure-results
+    //--or
+    //--allure generate allure-results --clean
+    //--allure open
+  ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+    testIdAttribute: 'data-tab-item',
     screenshot: 'on',
-    trace: 'on'
-    
+    trace: 'on',
+    video: 'on'  
   },
 
   /* Configure projects for major browsers */

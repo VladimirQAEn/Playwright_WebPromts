@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","3546","Iterating matching elements","Google Chrome","Wed Oct 08 21:40:45 EEST 2025","passed","Wed Oct 08 21:40:48 EEST 2025","","Chapter03\05_iterating_element.spec.ts","",""
+"","24081","Test 3","Google Chrome","Tue Oct 07 21:47:52 EEST 2025","failed","Tue Oct 07 21:48:16 EEST 2025","Regression Testing","Chapter03\03_reports.spec.ts","",""
+"","19396","Test 1","Google Chrome","Tue Oct 07 21:47:52 EEST 2025","passed","Tue Oct 07 21:48:12 EEST 2025","Smoke Testing","Chapter03\03_reports.spec.ts","",""
+"","16310","Test 2","Google Chrome","Tue Oct 07 21:47:52 EEST 2025","passed","Tue Oct 07 21:48:09 EEST 2025","Regression Testing","Chapter03\03_reports.spec.ts","",""
+"","2911","Text Content - Get Attribute","Google Chrome","Wed Oct 08 20:55:43 EEST 2025","passed","Wed Oct 08 20:55:46 EEST 2025","","Chapter03\04_textContent_GetAttrubite.spec.ts","",""

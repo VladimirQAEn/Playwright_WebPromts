@@ -1,0 +1,15 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="3.9260100000007077">
+<testsuite name="Chapter03\06_checkbox_radioButton.spec.ts" timestamp="2025-10-08T19:44:32.788Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="2.379" errors="0">
+<testcase name="Checkbox_radioButton" classname="Chapter03\06_checkbox_radioButton.spec.ts" time="2.379">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter03-06_checkbox_radioButton-Checkbox-radioButton-Google-Chrome\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\Chapter03-06_checkbox_radioButton-Checkbox-radioButton-Google-Chrome\video.webm]]
+
+[[ATTACHMENT|test-results\Chapter03-06_checkbox_radioButton-Checkbox-radioButton-Google-Chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
