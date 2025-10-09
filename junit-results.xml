@@ -1,13 +1,390 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="3.9260100000007077">
-<testsuite name="Chapter03\06_checkbox_radioButton.spec.ts" timestamp="2025-10-08T19:44:32.788Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="2.379" errors="0">
-<testcase name="Checkbox_radioButton" classname="Chapter03\06_checkbox_radioButton.spec.ts" time="2.379">
+<testsuites id="" name="" tests="10" failures="5" skipped="0" errors="0" time="129.52378300000075">
+<testsuite name="Chapter01\01_hooks.spec.ts" timestamp="2025-10-08T19:51:47.162Z" hostname="Google Chrome" tests="2" failures="2" skipped="0" time="255.599" errors="0">
+<testcase name="Test_1" classname="Chapter01\01_hooks.spec.ts" time="127.73">
+<failure message="01_hooks.spec.ts:19:9 Test_1" type="FAILURE">
+<![CDATA[  [Google Chrome] › Chapter01\01_hooks.spec.ts:19:9 › Test_1 ───────────────────────────────────────
+
+    Test timeout of 120000ms exceeded while running "beforeEach" hook.
+
+      2 |
+      3 |
+    > 4 |     test.beforeEach(async({ page }) => {
+        |          ^
+      5 |
+      6 |         //log in
+      7 |         await page.goto('https://platform-qa.admixer.net');
+        at D:\Playwright\Playwright_WebPromts\tests\Chapter01\01_hooks.spec.ts:4:10
+
+    Error: locator.click: Test timeout of 120000ms exceeded.
+    Call log:
+      - waiting for getByRole('textbox', { name: 'Your Email Your password' })
+
+
+       6 |         //log in
+       7 |         await page.goto('https://platform-qa.admixer.net');
+    >  8 |         await page.getByRole('textbox', { name: 'Your Email Your password' }).click();
+         |                                                                               ^
+       9 |         await page.getByRole('textbox', { name: 'Your Email Your password' }).fill('TD_AutoTest@test');
+      10 |         await page.getByRole('textbox', { name: 'Password', exact: true }).click();
+      11 |         await page.getByRole('textbox', { name: 'Password', exact: true }).fill('Vahtang9935');
+        at D:\Playwright\Playwright_WebPromts\tests\Chapter01\01_hooks.spec.ts:8:79
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\Chapter01-01_hooks-Test-1-Google-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\Chapter01-01_hooks-Test-1-Google-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\Chapter01-01_hooks-Test-1-Google-Chrome\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\Chapter01-01_hooks-Test-1-Google-Chrome\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\Chapter03-06_checkbox_radioButton-Checkbox-radioButton-Google-Chrome\test-finished-1.png]]
+[[ATTACHMENT|test-results\Chapter01-01_hooks-Test-1-Google-Chrome\test-failed-1.png]]
 
-[[ATTACHMENT|test-results\Chapter03-06_checkbox_radioButton-Checkbox-radioButton-Google-Chrome\video.webm]]
+[[ATTACHMENT|test-results\Chapter01-01_hooks-Test-1-Google-Chrome\video.webm]]
 
-[[ATTACHMENT|test-results\Chapter03-06_checkbox_radioButton-Checkbox-radioButton-Google-Chrome\trace.zip]]
+[[ATTACHMENT|test-results\Chapter01-01_hooks-Test-1-Google-Chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Test_2" classname="Chapter01\01_hooks.spec.ts" time="127.869">
+<failure message="01_hooks.spec.ts:26:9 Test_2" type="FAILURE">
+<![CDATA[  [Google Chrome] › Chapter01\01_hooks.spec.ts:26:9 › Test_2 ───────────────────────────────────────
+
+    Test timeout of 120000ms exceeded while running "beforeEach" hook.
+
+      2 |
+      3 |
+    > 4 |     test.beforeEach(async({ page }) => {
+        |          ^
+      5 |
+      6 |         //log in
+      7 |         await page.goto('https://platform-qa.admixer.net');
+        at D:\Playwright\Playwright_WebPromts\tests\Chapter01\01_hooks.spec.ts:4:10
+
+    Error: locator.click: Test timeout of 120000ms exceeded.
+    Call log:
+      - waiting for getByRole('textbox', { name: 'Your Email Your password' })
+
+
+       6 |         //log in
+       7 |         await page.goto('https://platform-qa.admixer.net');
+    >  8 |         await page.getByRole('textbox', { name: 'Your Email Your password' }).click();
+         |                                                                               ^
+       9 |         await page.getByRole('textbox', { name: 'Your Email Your password' }).fill('TD_AutoTest@test');
+      10 |         await page.getByRole('textbox', { name: 'Password', exact: true }).click();
+      11 |         await page.getByRole('textbox', { name: 'Password', exact: true }).fill('Vahtang9935');
+        at D:\Playwright\Playwright_WebPromts\tests\Chapter01\01_hooks.spec.ts:8:79
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\Chapter01-01_hooks-Test-2-Google-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\Chapter01-01_hooks-Test-2-Google-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\Chapter01-01_hooks-Test-2-Google-Chrome\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\Chapter01-01_hooks-Test-2-Google-Chrome\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter01-01_hooks-Test-2-Google-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\Chapter01-01_hooks-Test-2-Google-Chrome\video.webm]]
+
+[[ATTACHMENT|test-results\Chapter01-01_hooks-Test-2-Google-Chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter01\02_locators.spec.ts" timestamp="2025-10-08T19:51:47.162Z" hostname="Google Chrome" tests="1" failures="1" skipped="0" time="126.424" errors="0">
+<testcase name="Locators check" classname="Chapter01\02_locators.spec.ts" time="126.424">
+<failure message="02_locators.spec.ts:3:9 Locators check" type="FAILURE">
+<![CDATA[  [Google Chrome] › Chapter01\02_locators.spec.ts:3:9 › Locators check ─────────────────────────────
+
+    Test timeout of 120000ms exceeded.
+
+    Error: locator.click: Test timeout of 120000ms exceeded.
+    Call log:
+      - waiting for locator('.mat-icon').first()
+        - waiting for" https://platform-qa.admixer.net/?navigate=/&access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2Iiwia2lkIjoiMXEydzNlNHI1dDZ5N3U4aTlvMHAiLCJ0eXAiOiJKV1QifQ.eyJuYmY…" navigation to finish...
+        - navigated to "https://platform-qa.admixer.net/?navigate=/&access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2Iiwia2lkIjoiMXEydzNlNHI1dDZ5N3U4aTlvMHAiLCJ0eXAiOiJKV1QifQ.eyJuYmY…"
+
+
+      12 |
+      13 |         // go to advertisers list page
+    > 14 |         await page.locator('.mat-icon').first().click();
+         |                                                 ^
+      15 |         await page.getByRole('link', { name: 'Advertisers' }).click();
+      16 |
+      17 |         //getByRole    
+        at D:\Playwright\Playwright_WebPromts\tests\Chapter01\02_locators.spec.ts:14:49
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\Chapter01-02_locators-Locators-check-Google-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\Chapter01-02_locators-Locators-check-Google-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\Chapter01-02_locators-Locators-check-Google-Chrome\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\Chapter01-02_locators-Locators-check-Google-Chrome\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter01-02_locators-Locators-check-Google-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\Chapter01-02_locators-Locators-check-Google-Chrome\video.webm]]
+
+[[ATTACHMENT|test-results\Chapter01-02_locators-Locators-check-Google-Chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter01\03_handling_dropdown.spec.ts" timestamp="2025-10-08T19:51:47.162Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="5.039" errors="0">
+<testcase name="Handling dropdown list in Playwright" classname="Chapter01\03_handling_dropdown.spec.ts" time="5.039">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter01-03_handling_drop-33763-dropdown-list-in-Playwright-Google-Chrome\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\Chapter01-03_handling_drop-33763-dropdown-list-in-Playwright-Google-Chrome\video.webm]]
+
+[[ATTACHMENT|test-results\Chapter01-03_handling_drop-33763-dropdown-list-in-Playwright-Google-Chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter01\04_iframes_DragDrop.spec.ts" timestamp="2025-10-08T19:51:47.162Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="3.034" errors="0">
+<testcase name="Drag and drop within an iframe" classname="Chapter01\04_iframes_DragDrop.spec.ts" time="3.034">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter01-04_iframes_DragDrop-Drag-and-drop-within-an-iframe-Google-Chrome\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\Chapter01-04_iframes_DragDrop-Drag-and-drop-within-an-iframe-Google-Chrome\video.webm]]
+
+[[ATTACHMENT|test-results\Chapter01-04_iframes_DragDrop-Drag-and-drop-within-an-iframe-Google-Chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter01\05_mouthActions.spec.ts" timestamp="2025-10-08T19:51:47.162Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="19.418" errors="0">
+<testcase name="Mouth Actions" classname="Chapter01\05_mouthActions.spec.ts" time="19.418">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter01-05_mouthActions-Mouth-Actions-Google-Chrome\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\Chapter01-05_mouthActions-Mouth-Actions-Google-Chrome\video.webm]]
+
+[[ATTACHMENT|test-results\Chapter01-05_mouthActions-Mouth-Actions-Google-Chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter01\06_keyboardActions.spec.ts" timestamp="2025-10-08T19:51:47.162Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="10.499" errors="0">
+<testcase name="Keyboard Actions" classname="Chapter01\06_keyboardActions.spec.ts" time="10.499">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter01-06_keyboardActions-Keyboard-Actions-Google-Chrome\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\Chapter01-06_keyboardActions-Keyboard-Actions-Google-Chrome\video.webm]]
+
+[[ATTACHMENT|test-results\Chapter01-06_keyboardActions-Keyboard-Actions-Google-Chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter01\07_datePicker.spec.ts" timestamp="2025-10-08T19:51:47.162Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="7.027" errors="0">
+<testcase name="Selecting date values" classname="Chapter01\07_datePicker.spec.ts" time="7.027">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter01-07_datePicker-Selecting-date-values-Google-Chrome\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\Chapter01-07_datePicker-Selecting-date-values-Google-Chrome\video.webm]]
+
+[[ATTACHMENT|test-results\Chapter01-07_datePicker-Selecting-date-values-Google-Chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter01\08_assertions.spec.ts" timestamp="2025-10-08T19:51:47.162Z" hostname="Google Chrome" tests="1" failures="1" skipped="0" time="13.017" errors="0">
+<testcase name="Assertions" classname="Chapter01\08_assertions.spec.ts" time="13.017">
+<failure message="08_assertions.spec.ts:3:5 Assertions" type="FAILURE">
+<![CDATA[  [Google Chrome] › Chapter01\08_assertions.spec.ts:3:5 › Assertions ───────────────────────────────
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator: locator('span[id="description-text"]').first()
+    Expected string: "Simple connection in a couple of minutes. Online traffic analysis in your personal cabinet"
+    Received: <element(s) not found>
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveText" with timeout 5000ms
+      - waiting for locator('span[id="description-text"]').first()
+
+
+      18 |     await expect(page).toHaveURL('https://www.youtube.com/results?search_query=Playwright+Automation+Using+TypeScript');
+      19 |     await expect(page).toHaveTitle('Playwright Automation Using TypeScript - YouTube');
+    > 20 |     await expect(page.locator('span[id="description-text"]').first()).toHaveText('Simple connection in a couple of minutes. Online traffic analysis in your personal cabinet');
+         |                                                                       ^
+      21 |     await expect(page.locator('h3[id="video-title"]')).toHaveCount(3);
+      22 |     await expect(page.locator('h3[id="video-title"]')).toBeDisabled();
+      23 |
+        at D:\Playwright\Playwright_WebPromts\tests\Chapter01\08_assertions.spec.ts:20:71
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\Chapter01-08_assertions-Assertions-Google-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\Chapter01-08_assertions-Assertions-Google-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\Chapter01-08_assertions-Assertions-Google-Chrome\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\Chapter01-08_assertions-Assertions-Google-Chrome\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\Chapter01-08_assertions-Assertions-Google-Chrome\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter01-08_assertions-Assertions-Google-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\Chapter01-08_assertions-Assertions-Google-Chrome\video.webm]]
+
+[[ATTACHMENT|test-results\Chapter01-08_assertions-Assertions-Google-Chrome\error-context.md]]
+
+[[ATTACHMENT|test-results\Chapter01-08_assertions-Assertions-Google-Chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter01\09_softAssertions.spec.ts" timestamp="2025-10-08T19:51:47.162Z" hostname="Google Chrome" tests="1" failures="1" skipped="0" time="22.016" errors="0">
+<testcase name="Soft Assertions" classname="Chapter01\09_softAssertions.spec.ts" time="22.016">
+<failure message="09_softAssertions.spec.ts:3:5 Soft Assertions" type="FAILURE">
+<![CDATA[  [Google Chrome] › Chapter01\09_softAssertions.spec.ts:3:5 › Soft Assertions ──────────────────────
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected string: "Playwright test Automation Using TypeScript - YouTube"
+    Received string: "Playwright Automation Using TypeScript - YouTube"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "soft toHaveTitle" with timeout 5000ms
+        5 × unexpected value "YouTube"
+        4 × unexpected value "Playwright Automation Using TypeScript - YouTube"
+
+
+      18 |     //https://prnt.sc/2Ds3WWgl0Gla  - за що відповідає soft
+      19 |     await expect(page).toHaveURL('https://www.youtube.com/results?search_query=Playwright+Automation+Using+TypeScript');
+    > 20 |     await expect.soft(page).toHaveTitle('Playwright test Automation Using TypeScript - YouTube');
+         |                             ^
+      21 |     await expect.soft(page.locator('span[id="description-text"]').first()).toHaveText('Simple connection in a couple of minutes. Online traffic analysis in your personal cabinet');
+      22 |     
+      23 |     await expect(page.locator('h3[id="video-title"]')).toHaveCount(3);
+        at D:\Playwright\Playwright_WebPromts\tests\Chapter01\09_softAssertions.spec.ts:20:29
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator: locator('span[id="description-text"]').first()
+    Expected string: "Simple connection in a couple of minutes. Online traffic analysis in your personal cabinet"
+    Received: <element(s) not found>
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "soft toHaveText" with timeout 5000ms
+      - waiting for locator('span[id="description-text"]').first()
+
+
+      19 |     await expect(page).toHaveURL('https://www.youtube.com/results?search_query=Playwright+Automation+Using+TypeScript');
+      20 |     await expect.soft(page).toHaveTitle('Playwright test Automation Using TypeScript - YouTube');
+    > 21 |     await expect.soft(page.locator('span[id="description-text"]').first()).toHaveText('Simple connection in a couple of minutes. Online traffic analysis in your personal cabinet');
+         |                                                                            ^
+      22 |     
+      23 |     await expect(page.locator('h3[id="video-title"]')).toHaveCount(3);
+      24 |     await expect(page.locator('h3[id="video-title"]')).toBeDisabled();
+        at D:\Playwright\Playwright_WebPromts\tests\Chapter01\09_softAssertions.spec.ts:21:76
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  locator('h3[id="video-title"]')
+    Expected: 3
+    Received: 0
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" with timeout 5000ms
+      - waiting for locator('h3[id="video-title"]')
+        9 × locator resolved to 0 elements
+          - unexpected value "0"
+
+
+      21 |     await expect.soft(page.locator('span[id="description-text"]').first()).toHaveText('Simple connection in a couple of minutes. Online traffic analysis in your personal cabinet');
+      22 |     
+    > 23 |     await expect(page.locator('h3[id="video-title"]')).toHaveCount(3);
+         |                                                        ^
+      24 |     await expect(page.locator('h3[id="video-title"]')).toBeDisabled();
+      25 |
+      26 | }); 
+        at D:\Playwright\Playwright_WebPromts\tests\Chapter01\09_softAssertions.spec.ts:23:56
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\Chapter01-09_softAssertions-Soft-Assertions-Google-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\Chapter01-09_softAssertions-Soft-Assertions-Google-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\Chapter01-09_softAssertions-Soft-Assertions-Google-Chrome\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\Chapter01-09_softAssertions-Soft-Assertions-Google-Chrome\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\Chapter01-09_softAssertions-Soft-Assertions-Google-Chrome\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter01-09_softAssertions-Soft-Assertions-Google-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\Chapter01-09_softAssertions-Soft-Assertions-Google-Chrome\video.webm]]
+
+[[ATTACHMENT|test-results\Chapter01-09_softAssertions-Soft-Assertions-Google-Chrome\error-context.md]]
+
+[[ATTACHMENT|test-results\Chapter01-09_softAssertions-Soft-Assertions-Google-Chrome\trace.zip]]
 ]]>
 </system-out>
 </testcase>

@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 4
     },
     "preserveOutput": "always",
     "reporter": [
@@ -51,7 +51,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "Google Chrome",
         "name": "Google Chrome",
@@ -72,13 +72,259 @@
   },
   "suites": [
     {
-      "title": "Chapter03\\06_checkbox_radioButton.spec.ts",
-      "file": "Chapter03/06_checkbox_radioButton.spec.ts",
+      "title": "Chapter01\\01_hooks.spec.ts",
+      "file": "Chapter01/01_hooks.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Checkbox_radioButton",
+          "title": "Test_1",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 17,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 127730,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 120000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 120000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\01_hooks.spec.ts:4:10",
+                    "location": {
+                      "file": "D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\01_hooks.spec.ts",
+                      "column": 10,
+                      "line": 4
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m\n \u001b[90m 6 |\u001b[39m         \u001b[90m//log in\u001b[39m\n \u001b[90m 7 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://platform-qa.admixer.net'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\01_hooks.spec.ts",
+                        "column": 10,
+                        "line": 4
+                      },
+                      "message": "\u001b[31mTest timeout of 120000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m\n \u001b[90m 6 |\u001b[39m         \u001b[90m//log in\u001b[39m\n \u001b[90m 7 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://platform-qa.admixer.net'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\01_hooks.spec.ts:4:10\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\01_hooks.spec.ts",
+                        "column": 79,
+                        "line": 8
+                      },
+                      "message": "Error: locator.click: Test timeout of 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('textbox', { name: 'Your Email Your password' })\u001b[22m\n\n\n\u001b[0m \u001b[90m  6 |\u001b[39m         \u001b[90m//log in\u001b[39m\n \u001b[90m  7 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://platform-qa.admixer.net'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'textbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Your Email Your password'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'textbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Your Email Your password'\u001b[39m })\u001b[33m.\u001b[39mfill(\u001b[32m'TD_AutoTest@test'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'textbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Password'\u001b[39m\u001b[33m,\u001b[39m exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'textbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Password'\u001b[39m\u001b[33m,\u001b[39m exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m.\u001b[39mfill(\u001b[32m'Vahtang9935'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\01_hooks.spec.ts:8:79\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-08T19:51:47.788Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-01_hooks-Test-1-Google-Chrome\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-01_hooks-Test-1-Google-Chrome\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-01_hooks-Test-1-Google-Chrome\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\01_hooks.spec.ts",
+                    "column": 10,
+                    "line": 4
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "fee61f24b4f647b7a604-c03e7fbbd75ad2f36f9b",
+          "file": "Chapter01/01_hooks.spec.ts",
+          "line": 19,
+          "column": 9
+        },
+        {
+          "title": "Test_2",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 18,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 127869,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 120000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 120000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\01_hooks.spec.ts:4:10",
+                    "location": {
+                      "file": "D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\01_hooks.spec.ts",
+                      "column": 10,
+                      "line": 4
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m\n \u001b[90m 6 |\u001b[39m         \u001b[90m//log in\u001b[39m\n \u001b[90m 7 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://platform-qa.admixer.net'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\01_hooks.spec.ts",
+                        "column": 10,
+                        "line": 4
+                      },
+                      "message": "\u001b[31mTest timeout of 120000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m\n \u001b[90m 6 |\u001b[39m         \u001b[90m//log in\u001b[39m\n \u001b[90m 7 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://platform-qa.admixer.net'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\01_hooks.spec.ts:4:10\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\01_hooks.spec.ts",
+                        "column": 79,
+                        "line": 8
+                      },
+                      "message": "Error: locator.click: Test timeout of 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('textbox', { name: 'Your Email Your password' })\u001b[22m\n\n\n\u001b[0m \u001b[90m  6 |\u001b[39m         \u001b[90m//log in\u001b[39m\n \u001b[90m  7 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://platform-qa.admixer.net'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'textbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Your Email Your password'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'textbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Your Email Your password'\u001b[39m })\u001b[33m.\u001b[39mfill(\u001b[32m'TD_AutoTest@test'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'textbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Password'\u001b[39m\u001b[33m,\u001b[39m exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'textbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Password'\u001b[39m\u001b[33m,\u001b[39m exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m.\u001b[39mfill(\u001b[32m'Vahtang9935'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\01_hooks.spec.ts:8:79\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-08T19:51:47.787Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-01_hooks-Test-2-Google-Chrome\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-01_hooks-Test-2-Google-Chrome\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-01_hooks-Test-2-Google-Chrome\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\01_hooks.spec.ts",
+                    "column": 10,
+                    "line": 4
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "fee61f24b4f647b7a604-53ac159ff71744c16f11",
+          "file": "Chapter01/01_hooks.spec.ts",
+          "line": 26,
+          "column": 9
+        }
+      ]
+    },
+    {
+      "title": "Chapter01\\02_locators.spec.ts",
+      "file": "Chapter01/02_locators.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Locators check",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 19,
+                  "parallelIndex": 2,
+                  "status": "timedOut",
+                  "duration": 126424,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\02_locators.spec.ts",
+                        "column": 49,
+                        "line": 14
+                      },
+                      "message": "Error: locator.click: Test timeout of 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.mat-icon').first()\u001b[22m\n\u001b[2m    - waiting for\" https://platform-qa.admixer.net/?navigate=/&access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2Iiwia2lkIjoiMXEydzNlNHI1dDZ5N3U4aTlvMHAiLCJ0eXAiOiJKV1QifQ.eyJuYmY…\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://platform-qa.admixer.net/?navigate=/&access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2Iiwia2lkIjoiMXEydzNlNHI1dDZ5N3U4aTlvMHAiLCJ0eXAiOiJKV1QifQ.eyJuYmY…\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m         \u001b[90m// go to advertisers list page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.mat-icon'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Advertisers'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m         \u001b[90m//getByRole    \u001b[39m\u001b[0m\n\u001b[2m    at D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\02_locators.spec.ts:14:49\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-08T19:51:47.782Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-02_locators-Locators-check-Google-Chrome\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-02_locators-Locators-check-Google-Chrome\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-02_locators-Locators-check-Google-Chrome\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "72938d14104a26a65b31-9763772abfd905adedd9",
+          "file": "Chapter01/02_locators.spec.ts",
+          "line": 3,
+          "column": 9
+        }
+      ]
+    },
+    {
+      "title": "Chapter01\\03_handling_dropdown.spec.ts",
+      "file": "Chapter01/03_handling_dropdown.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Handling dropdown list in Playwright",
           "ok": true,
           "tags": [],
           "tests": [
@@ -90,31 +336,31 @@
               "projectName": "Google Chrome",
               "results": [
                 {
-                  "workerIndex": 13,
-                  "parallelIndex": 0,
+                  "workerIndex": 20,
+                  "parallelIndex": 3,
                   "status": "passed",
-                  "duration": 2379,
+                  "duration": 5039,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-10-08T19:44:33.366Z",
+                  "startTime": "2025-10-08T19:51:47.783Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter03-06_checkbox_radioButton-Checkbox-radioButton-Google-Chrome\\test-finished-1.png"
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-03_handling_drop-33763-dropdown-list-in-Playwright-Google-Chrome\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter03-06_checkbox_radioButton-Checkbox-radioButton-Google-Chrome\\video.webm"
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-03_handling_drop-33763-dropdown-list-in-Playwright-Google-Chrome\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter03-06_checkbox_radioButton-Checkbox-radioButton-Google-Chrome\\trace.zip"
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-03_handling_drop-33763-dropdown-list-in-Playwright-Google-Chrome\\trace.zip"
                     }
                   ]
                 }
@@ -122,8 +368,430 @@
               "status": "expected"
             }
           ],
-          "id": "39c80c4485033928eb10-e1b8cfb904f80b065191",
-          "file": "Chapter03/06_checkbox_radioButton.spec.ts",
+          "id": "2dfed0e5e2ffa5cd4ff1-9163571ab0600bff2436",
+          "file": "Chapter01/03_handling_dropdown.spec.ts",
+          "line": 10,
+          "column": 13
+        }
+      ]
+    },
+    {
+      "title": "Chapter01\\04_iframes_DragDrop.spec.ts",
+      "file": "Chapter01/04_iframes_DragDrop.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Drag and drop within an iframe",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 20,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 3034,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-08T19:51:53.064Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-04_iframes_DragDrop-Drag-and-drop-within-an-iframe-Google-Chrome\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-04_iframes_DragDrop-Drag-and-drop-within-an-iframe-Google-Chrome\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-04_iframes_DragDrop-Drag-and-drop-within-an-iframe-Google-Chrome\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "29dfb9a13739e063da28-0c191723c6f945244591",
+          "file": "Chapter01/04_iframes_DragDrop.spec.ts",
+          "line": 3,
+          "column": 13
+        }
+      ]
+    },
+    {
+      "title": "Chapter01\\05_mouthActions.spec.ts",
+      "file": "Chapter01/05_mouthActions.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Mouth Actions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 20,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 19418,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-08T19:51:56.167Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-05_mouthActions-Mouth-Actions-Google-Chrome\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-05_mouthActions-Mouth-Actions-Google-Chrome\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-05_mouthActions-Mouth-Actions-Google-Chrome\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b887eae61a2195f099b4-15f304c1d253c9b72e07",
+          "file": "Chapter01/05_mouthActions.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Chapter01\\06_keyboardActions.spec.ts",
+      "file": "Chapter01/06_keyboardActions.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Keyboard Actions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 20,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 10499,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-08T19:52:16.036Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-06_keyboardActions-Keyboard-Actions-Google-Chrome\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-06_keyboardActions-Keyboard-Actions-Google-Chrome\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-06_keyboardActions-Keyboard-Actions-Google-Chrome\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fa62aad70816c33feb11-9f81ec2d49bf3aa30c72",
+          "file": "Chapter01/06_keyboardActions.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Chapter01\\07_datePicker.spec.ts",
+      "file": "Chapter01/07_datePicker.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Selecting date values",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 20,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 7027,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-08T19:52:26.605Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-07_datePicker-Selecting-date-values-Google-Chrome\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-07_datePicker-Selecting-date-values-Google-Chrome\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-07_datePicker-Selecting-date-values-Google-Chrome\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6d9747ce7578da29ae79-2ff870a68a2631b3cb53",
+          "file": "Chapter01/07_datePicker.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Chapter01\\08_assertions.spec.ts",
+      "file": "Chapter01/08_assertions.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Assertions",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 20,
+                  "parallelIndex": 3,
+                  "status": "failed",
+                  "duration": 13017,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('span[id=\"description-text\"]').first()\nExpected string: \u001b[32m\"Simple connection in a couple of minutes. Online traffic analysis in your personal cabinet\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('span[id=\"description-text\"]').first()\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('span[id=\"description-text\"]').first()\nExpected string: \u001b[32m\"Simple connection in a couple of minutes. Online traffic analysis in your personal cabinet\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('span[id=\"description-text\"]').first()\u001b[22m\n\n    at D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\08_assertions.spec.ts:20:71",
+                    "location": {
+                      "file": "D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\08_assertions.spec.ts",
+                      "column": 71,
+                      "line": 20
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'https://www.youtube.com/results?search_query=Playwright+Automation+Using+TypeScript'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'Playwright Automation Using TypeScript - YouTube'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'span[id=\"description-text\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'Simple connection in a couple of minutes. Online traffic analysis in your personal cabinet'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h3[id=\"video-title\"]'\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m3\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h3[id=\"video-title\"]'\u001b[39m))\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\08_assertions.spec.ts",
+                        "column": 71,
+                        "line": 20
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('span[id=\"description-text\"]').first()\nExpected string: \u001b[32m\"Simple connection in a couple of minutes. Online traffic analysis in your personal cabinet\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('span[id=\"description-text\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'https://www.youtube.com/results?search_query=Playwright+Automation+Using+TypeScript'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'Playwright Automation Using TypeScript - YouTube'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'span[id=\"description-text\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'Simple connection in a couple of minutes. Online traffic analysis in your personal cabinet'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h3[id=\"video-title\"]'\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m3\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h3[id=\"video-title\"]'\u001b[39m))\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\08_assertions.spec.ts:20:71\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-08T19:52:33.768Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-08_assertions-Assertions-Google-Chrome\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-08_assertions-Assertions-Google-Chrome\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-08_assertions-Assertions-Google-Chrome\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-08_assertions-Assertions-Google-Chrome\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\08_assertions.spec.ts",
+                    "column": 71,
+                    "line": 20
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "aa0962d83bd6179c27c4-bd2f614f07b52b37d087",
+          "file": "Chapter01/08_assertions.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Chapter01\\09_softAssertions.spec.ts",
+      "file": "Chapter01/09_softAssertions.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Soft Assertions",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 21,
+                  "parallelIndex": 3,
+                  "status": "failed",
+                  "duration": 22016,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected string: \u001b[32m\"Playwright \u001b[7mtest \u001b[27mAutomation Using TypeScript - YouTube\"\u001b[39m\nReceived string: \u001b[31m\"Playwright Automation Using TypeScript - YouTube\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m    5 × unexpected value \"YouTube\"\u001b[22m\n\u001b[2m    4 × unexpected value \"Playwright Automation Using TypeScript - YouTube\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected string: \u001b[32m\"Playwright \u001b[7mtest \u001b[27mAutomation Using TypeScript - YouTube\"\u001b[39m\nReceived string: \u001b[31m\"Playwright Automation Using TypeScript - YouTube\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m    5 × unexpected value \"YouTube\"\u001b[22m\n\u001b[2m    4 × unexpected value \"Playwright Automation Using TypeScript - YouTube\"\u001b[22m\n\n    at D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\09_softAssertions.spec.ts:20:29",
+                    "location": {
+                      "file": "D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\09_softAssertions.spec.ts",
+                      "column": 29,
+                      "line": 20
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 18 |\u001b[39m     \u001b[90m//https://prnt.sc/2Ds3WWgl0Gla  - за що відповідає soft\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'https://www.youtube.com/results?search_query=Playwright+Automation+Using+TypeScript'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'Playwright test Automation Using TypeScript - YouTube'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(page\u001b[33m.\u001b[39mlocator(\u001b[32m'span[id=\"description-text\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'Simple connection in a couple of minutes. Online traffic analysis in your personal cabinet'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     \n \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h3[id=\"video-title\"]'\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m3\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\09_softAssertions.spec.ts",
+                        "column": 29,
+                        "line": 20
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected string: \u001b[32m\"Playwright \u001b[7mtest \u001b[27mAutomation Using TypeScript - YouTube\"\u001b[39m\nReceived string: \u001b[31m\"Playwright Automation Using TypeScript - YouTube\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m    5 × unexpected value \"YouTube\"\u001b[22m\n\u001b[2m    4 × unexpected value \"Playwright Automation Using TypeScript - YouTube\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 18 |\u001b[39m     \u001b[90m//https://prnt.sc/2Ds3WWgl0Gla  - за що відповідає soft\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'https://www.youtube.com/results?search_query=Playwright+Automation+Using+TypeScript'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'Playwright test Automation Using TypeScript - YouTube'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(page\u001b[33m.\u001b[39mlocator(\u001b[32m'span[id=\"description-text\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'Simple connection in a couple of minutes. Online traffic analysis in your personal cabinet'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     \n \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h3[id=\"video-title\"]'\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m3\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\09_softAssertions.spec.ts:20:29\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\09_softAssertions.spec.ts",
+                        "column": 76,
+                        "line": 21
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('span[id=\"description-text\"]').first()\nExpected string: \u001b[32m\"Simple connection in a couple of minutes. Online traffic analysis in your personal cabinet\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('span[id=\"description-text\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'https://www.youtube.com/results?search_query=Playwright+Automation+Using+TypeScript'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'Playwright test Automation Using TypeScript - YouTube'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(page\u001b[33m.\u001b[39mlocator(\u001b[32m'span[id=\"description-text\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'Simple connection in a couple of minutes. Online traffic analysis in your personal cabinet'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m     \n \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h3[id=\"video-title\"]'\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m3\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h3[id=\"video-title\"]'\u001b[39m))\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\09_softAssertions.spec.ts:21:76\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\09_softAssertions.spec.ts",
+                        "column": 56,
+                        "line": 23
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('h3[id=\"video-title\"]')\nExpected: \u001b[32m3\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('h3[id=\"video-title\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to 0 elements\u001b[22m\n\u001b[2m      - unexpected value \"0\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(page\u001b[33m.\u001b[39mlocator(\u001b[32m'span[id=\"description-text\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'Simple connection in a couple of minutes. Online traffic analysis in your personal cabinet'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h3[id=\"video-title\"]'\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m3\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h3[id=\"video-title\"]'\u001b[39m))\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m\n \u001b[90m 26 |\u001b[39m })\u001b[33m;\u001b[39m \u001b[0m\n\u001b[2m    at D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\09_softAssertions.spec.ts:23:56\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-08T19:52:47.812Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-09_softAssertions-Soft-Assertions-Google-Chrome\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-09_softAssertions-Soft-Assertions-Google-Chrome\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-09_softAssertions-Soft-Assertions-Google-Chrome\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Playwright\\Playwright_WebPromts\\test-results\\Chapter01-09_softAssertions-Soft-Assertions-Google-Chrome\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Playwright\\Playwright_WebPromts\\tests\\Chapter01\\09_softAssertions.spec.ts",
+                    "column": 29,
+                    "line": 20
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3a6425798e453c267da0-029cd2d22f680283fc31",
+          "file": "Chapter01/09_softAssertions.spec.ts",
           "line": 3,
           "column": 5
         }
@@ -132,11 +800,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-08T19:44:32.153Z",
-    "duration": 3926.010000000708,
-    "expected": 1,
+    "startTime": "2025-10-08T19:51:46.546Z",
+    "duration": 129523.78300000075,
+    "expected": 5,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 5,
     "flaky": 0
   }
 }
